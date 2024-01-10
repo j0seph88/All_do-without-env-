@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<style>
+    h1{
+        color: red;
+    }
+    a{
+        text-decoration: none;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
